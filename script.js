@@ -19,3 +19,25 @@ for (let i = 0; i < a.length; i++) {
 }
 console.log(a.join(" "));
 
+//3=>Sum of all numbers in an array  
+var m=[1,2,3,4,5];
+var sum=0;
+for (i=0;i<m.length;i++)
+{
+  sum=sum+(+m[i]);
+}
+console.log(sum);
+
+//4=>Return all the palindromes in an array 
+
+var a = ['paper','noon','dad','mom','civic','not'];
+var b = a.filter((word) => {
+  var len = word.length;
+  for (var i = 0; i < len / 2; i++) {
+    if (word[i] !== word[len - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+});
+console.log(b);
